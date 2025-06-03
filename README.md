@@ -8,7 +8,7 @@
 
 ## 📖 About
 
-Bull Run Crypto Analyzer is a sophisticated web application that helps players make informed decisions in the Bull Run game on Infinex. Using AI-powered market analysis, real-time data, and interactive charts, it provides strategic recommendations for cryptocurrency card selection.
+BullRun Crypto Analyzer is a sophisticated web application that helps players make informed decisions in the Bull Run game on Infinex. Using AI-powered market analysis, real-time data, and interactive charts, it provides strategic recommendations for cryptocurrency card selection.
 
 ### ✨ Key Features
 
