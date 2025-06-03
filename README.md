@@ -1,4 +1,4 @@
-# 🚀 Bull Run Crypto Analyzer
+# 🚀 BullRun Crypto Analyzer
 
 > AI-powered cryptocurrency analysis tool for Bull Run game on Infinex
 
