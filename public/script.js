@@ -123,10 +123,40 @@ let geminiAI = null;
 let aiAnalysisResults = null;
 let isAIAnalyzing = false;
 
-// Initialize Gemini AI
+// Simple API client for Vercel
+class APIClient {
+  async analyzeCards(cryptoData, historicalData) {
+    const response = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        cryptoData,
+        historicalData
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    return await response.json();
+  }
+
+  async getHistoricalData(symbols) {
+    // Mock historical data for now
+    return symbols.map(symbol => ({
+      symbol,
+      price_48h_ago: Math.random() * 100,
+      current_price: Math.random() * 100
+    }));
+  }
+}
+
+// Initialize API client
 function initializeAI() {
-  // API ключ теперь хранится на сервере
-  geminiAI = new GeminiAI();
+  geminiAI = new APIClient();
 }
 
 // Call initialization when page loads
