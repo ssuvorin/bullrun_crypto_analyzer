@@ -86,7 +86,7 @@ const cryptos = [
   id: symbol,
   name: symbol,
   image: localImages.includes(symbol.toLowerCase())
-    ? `images/${symbol.toLowerCase()}.png`
+    ? `/images/${symbol.toLowerCase()}.png`
     : `https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/color/${symbol.toLowerCase()}.png`,
   change: "0.00",
   price: "$0.00"
